@@ -3,12 +3,12 @@
 
 class AbstractSensor
 {
-private:
-    float mesuredValue;
+    
 
 protected:
     float minValue;
     float maxValue;
+    float mesuredValue;
 
 public:
     AbstractSensor(); //constructeur de base de la classe
