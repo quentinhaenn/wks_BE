@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
+  <uml:Model xmi:id="_Rr2xMEImEeyRir5P9YDNug" name="Archi'pelle_sysml">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_RyBqoUImEeyRir5P9YDNug">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_RyeWkEImEeyRir5P9YDNug">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Pgez4EIoEeyRir5P9YDNug" name="Gardener" visibility="package"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_asNFcEIoEeyRir5P9YDNug" name="Planter une plante" visibility="package">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_-1zw4EIoEeyRir5P9YDNug" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="__7Y44UIoEeyRir5P9YDNug" name="ExtensionPoint2"/>
+      <include xmi:type="uml:Include" xmi:id="_FaKOsEIpEeyRir5P9YDNug" addition="_7gYtMEIoEeyRir5P9YDNug"/>
+      <include xmi:type="uml:Include" xmi:id="_HdxFMEIpEeyRir5P9YDNug" addition="_3svccEIoEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_dIT7gEIoEeyRir5P9YDNug" name="Vérifier température">
+      <include xmi:type="uml:Include" xmi:id="_aaOIIEIpEeyRir5P9YDNug" addition="_YZpXgEIpEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_gbFT0EIoEeyRir5P9YDNug" name="Vérifier PH">
+      <include xmi:type="uml:Include" xmi:id="_kz9jIEIpEeyRir5P9YDNug" addition="_bawYEEIpEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jkps0EIoEeyRir5P9YDNug" name="Vérifier CO2">
+      <include xmi:type="uml:Include" xmi:id="_lq39AEIpEeyRir5P9YDNug" addition="_d83vgEIpEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mGNDkEIoEeyRir5P9YDNug" name="Vérifier luminosité">
+      <include xmi:type="uml:Include" xmi:id="_m_yhgEIpEeyRir5P9YDNug" addition="_fr9HgEIpEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qLRbgEIoEeyRir5P9YDNug" memberEnd="_qLT3wEIoEeyRir5P9YDNug _qLT3wUIoEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qLTQsEIoEeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qLTQsUIoEeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_qLT3wEIoEeyRir5P9YDNug" name="planter une plante" type="_asNFcEIoEeyRir5P9YDNug" association="_qLRbgEIoEeyRir5P9YDNug"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_qLT3wUIoEeyRir5P9YDNug" name="gardener" type="_Pgez4EIoEeyRir5P9YDNug" association="_qLRbgEIoEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_sLK2sEIoEeyRir5P9YDNug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uCZeEEIoEeyRir5P9YDNug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vgho8EIoEeyRir5P9YDNug" memberEnd="_vgi3EUIoEeyRir5P9YDNug _vgi3EkIoEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vgiQAEIoEeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vgi3EEIoEeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_vgi3EUIoEeyRir5P9YDNug" name="gardener" type="_Pgez4EIoEeyRir5P9YDNug" association="_vgho8EIoEeyRir5P9YDNug"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_vgi3EkIoEeyRir5P9YDNug" name="vérifier luminosité" type="_mGNDkEIoEeyRir5P9YDNug" association="_vgho8EIoEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xHYSAEIoEeyRir5P9YDNug"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_3svccEIoEeyRir5P9YDNug" name="Remplir eau"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_7gYtMEIoEeyRir5P9YDNug" name="Remplir nutriment"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_YZpXgEIpEeyRir5P9YDNug" name="Capter température"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_bawYEEIpEeyRir5P9YDNug" name="Capter pH"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_d83vgEIpEeyRir5P9YDNug" name="Capter CO2"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_fr9HgEIpEeyRir5P9YDNug" name="Capter la luminosité"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_rBrpoEIpEeyRir5P9YDNug" name="Vérifier la conductimétrie">
+      <include xmi:type="uml:Include" xmi:id="_yIBaMEIpEeyRir5P9YDNug" addition="_vmKhcEIpEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vHgPgEIpEeyRir5P9YDNug" memberEnd="_vHg2kkIpEeyRir5P9YDNug _vHg2k0IpEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vHg2kEIpEeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vHg2kUIpEeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_vHg2kkIpEeyRir5P9YDNug" name="gardener" type="_Pgez4EIoEeyRir5P9YDNug" association="_vHgPgEIpEeyRir5P9YDNug"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_vHg2k0IpEeyRir5P9YDNug" name="vérifier la conductimétrie" type="_rBrpoEIpEeyRir5P9YDNug" association="_vHgPgEIpEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_vmKhcEIpEeyRir5P9YDNug" name="Capter la conductimétrie"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_BBz48EIqEeyRir5P9YDNug" name="Voir les mesures ">
+      <include xmi:type="uml:Include" xmi:id="_OLdPwEIqEeyRir5P9YDNug" addition="_F8XucEIqEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_F8XucEIqEeyRir5P9YDNug" name="Communiquer les mesures"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KZpLAEIqEeyRir5P9YDNug" memberEnd="_KZpyEkIqEeyRir5P9YDNug _KZqZIEIqEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KZpyEEIqEeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KZpyEUIqEeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KZpyEkIqEeyRir5P9YDNug" name="voir les mesures " type="_BBz48EIqEeyRir5P9YDNug" association="_KZpLAEIqEeyRir5P9YDNug"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KZqZIEIqEeyRir5P9YDNug" type="_Pgez4EIoEeyRir5P9YDNug" association="_KZpLAEIqEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Ow5fIEIqEeyRir5P9YDNug" name="Réagir à une alerte">
+      <include xmi:type="uml:Include" xmi:id="_c-j3sEIqEeyRir5P9YDNug" addition="_S7hFcEIqEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_S7hFcEIqEeyRir5P9YDNug" name="Être alerté"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_eP6x4EIqEeyRir5P9YDNug" memberEnd="_eP7Y8kIqEeyRir5P9YDNug _eP8AAEIqEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eP7Y8EIqEeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eP7Y8UIqEeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_eP7Y8kIqEeyRir5P9YDNug" name="gardener" type="_Pgez4EIoEeyRir5P9YDNug" association="_eP6x4EIqEeyRir5P9YDNug"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_eP8AAEIqEeyRir5P9YDNug" name="réagir à une alerte" type="_Ow5fIEIqEeyRir5P9YDNug" association="_eP6x4EIqEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mFow8EIqEeyRir5P9YDNug" name="Faire les réglages"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_o6KuEEIqEeyRir5P9YDNug" memberEnd="_o6L8MEIqEeyRir5P9YDNug _o6L8MUIqEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_o6LVIEIqEeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_o6LVIUIqEeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_o6L8MEIqEeyRir5P9YDNug" name="faire les réglages" type="_mFow8EIqEeyRir5P9YDNug" association="_o6KuEEIqEeyRir5P9YDNug"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_o6L8MUIqEeyRir5P9YDNug" name="gardener" type="_Pgez4EIoEeyRir5P9YDNug" association="_o6KuEEIqEeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_cfs-MEI6EeyRir5P9YDNug" name="Archi'Pot">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_M1vKQkI7EeyRir5P9YDNug" name="jardinier" type="_qqQ_cEI6EeyRir5P9YDNug" aggregation="composite" association="_M1ujMEI7EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M1vxUEI7EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M1vxUUI7EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_h9gOM0I7EeyRir5P9YDNug" name="réservoir à nutriments" type="_bOSkMEI7EeyRir5P9YDNug" aggregation="composite" association="_h9gOMEI7EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h9g1QEI7EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h9g1QUI7EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_n0pAskI7EeyRir5P9YDNug" name="pompe" type="_i0-owEI7EeyRir5P9YDNug" aggregation="composite" association="_n0oZoEI7EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n0pAs0I7EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n0pnwEI7EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_9p5cwkI7EeyRir5P9YDNug" name="raspeberrychef" type="_35PFsEI7EeyRir5P9YDNug" aggregation="composite" association="_9p41sEI7EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9p6D0EI7EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9p6D0UI7EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nUUagkI-EeyRir5P9YDNug" name="boîtier de commande" type="_pDs00EI7EeyRir5P9YDNug" aggregation="composite" association="_nUTzcEI-EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nUUag0I-EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nUVBkEI-EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mEP2kEI6EeyRir5P9YDNug" name="Faire pousser la plante"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qqQ_cEI6EeyRir5P9YDNug" name="Jardinier">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_vRNVYEI6EeyRir5P9YDNug" name="Faire les réglages"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_x8U30EI6EeyRir5P9YDNug" name="Plante"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_M1ujMEI7EeyRir5P9YDNug" memberEnd="_M1vKQkI7EeyRir5P9YDNug _M1vxUkI7EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_M1vKQEI7EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_M1vKQUI7EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_M1vxUkI7EeyRir5P9YDNug" name="archi'pot" type="_cfs-MEI6EeyRir5P9YDNug" association="_M1ujMEI7EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bOSkMEI7EeyRir5P9YDNug" name="Réservoir à nutriments">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ea2m0EI7EeyRir5P9YDNug" name="Accueillir nutriments"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ftJ8MEI7EeyRir5P9YDNug" name="délivrer nutriments"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_h9gOMEI7EeyRir5P9YDNug" memberEnd="_h9gOM0I7EeyRir5P9YDNug _h9g1QkI7EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h9gOMUI7EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h9gOMkI7EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_h9g1QkI7EeyRir5P9YDNug" name="archi'pot" type="_cfs-MEI6EeyRir5P9YDNug" association="_h9gOMEI7EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_i0-owEI7EeyRir5P9YDNug" name="Pompe">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_kk7jcEI7EeyRir5P9YDNug" name="Faire circuler l'eau"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n0oZoEI7EeyRir5P9YDNug" memberEnd="_n0pAskI7EeyRir5P9YDNug _n0pnwUI7EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_n0pAsEI7EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_n0pAsUI7EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_n0pnwUI7EeyRir5P9YDNug" name="archi'pot" type="_cfs-MEI6EeyRir5P9YDNug" association="_n0oZoEI7EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pDs00EI7EeyRir5P9YDNug" name="Boîtier de commande">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_qcWCwEI7EeyRir5P9YDNug" name="Accueillir branchement "/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r32XcEI7EeyRir5P9YDNug" name="Accueillir raspberryChef"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_uJQZYEI7EeyRir5P9YDNug" name="Alimenter "/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_whlisEI7EeyRir5P9YDNug" name="affichage"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_35PFsEI7EeyRir5P9YDNug" name="RaspeberryChef">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TzD200I9EeyRir5P9YDNug" name="raspberryesclave1" type="_Iqp0cEI8EeyRir5P9YDNug" aggregation="composite" association="_TzD20EI9EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TzEd4EI9EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TzEd4UI9EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_WyHo8kI9EeyRir5P9YDNug" name="raspberryesclave2" type="_M2UjoEI8EeyRir5P9YDNug" aggregation="composite" association="_WyHB4EI9EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WyHo80I9EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WyHo9EI9EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_CPwNkEI8EeyRir5P9YDNug" name="Accueille logiciel"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_EY5EUEI8EeyRir5P9YDNug" name="Alerte"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_FklbYEI8EeyRir5P9YDNug" name="Rassemble les données"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_9p41sEI7EeyRir5P9YDNug" memberEnd="_9p5cwkI7EeyRir5P9YDNug _9p6D0kI7EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9p5cwEI7EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9p5cwUI7EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_9p6D0kI7EeyRir5P9YDNug" name="archi'pot" type="_cfs-MEI6EeyRir5P9YDNug" association="_9p41sEI7EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Iqp0cEI8EeyRir5P9YDNug" name="RaspberryEsclave1">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MJxxQEI9EeyRir5P9YDNug" name="capteur de niveau d'eau" type="_je56EEI8EeyRir5P9YDNug" aggregation="composite" association="_MJxKMEI9EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MJxxQUI9EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MJxxQkI9EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MpKb8kI9EeyRir5P9YDNug" name="sonde conductimétrique" type="_jHZZAEI8EeyRir5P9YDNug" aggregation="composite" association="_MpJ04EI9EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MpLDAEI9EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MpLDAUI9EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NMWokkI9EeyRir5P9YDNug" name="sonde ph-métrique" type="_hEvkwEI8EeyRir5P9YDNug" aggregation="composite" association="_NMWBgEI9EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMXPoEI9EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMXPoUI9EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Z9NPcUI-EeyRir5P9YDNug" name="block niveau nutriments" type="_VYnC4EI-EeyRir5P9YDNug" aggregation="composite" association="_Z9MoYEI-EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z9NPckI-EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z9NPc0I-EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Yl2s4EI8EeyRir5P9YDNug" name="contrôle les paramètres de l'eau"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_M2UjoEI8EeyRir5P9YDNug" name="RaspberryEsclave2">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JacAs0I-EeyRir5P9YDNug" name="thermomètre" type="_lK4TsEI8EeyRir5P9YDNug" aggregation="composite" association="_JacAsEI-EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JacAtEI-EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JacAtUI-EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JzxtwkI-EeyRir5P9YDNug" name="capteur co2" type="_lcHNoEI8EeyRir5P9YDNug" aggregation="composite" association="_JzxGsEI-EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jzxtw0I-EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JzxtxEI-EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KMdTgkI-EeyRir5P9YDNug" name="hygromètre" type="_lteqcEI8EeyRir5P9YDNug" aggregation="composite" association="_KMcscEI-EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KMd6kEI-EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KMd6kUI-EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Kt83AkI-EeyRir5P9YDNug" name="photorésistance" type="_mEFMkEI8EeyRir5P9YDNug" aggregation="composite" association="_Kt8P8EI-EeyRir5P9YDNug">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Kt9eEEI-EeyRir5P9YDNug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Kt9eEUI-EeyRir5P9YDNug" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_dqnAMEI8EeyRir5P9YDNug" name="Contrôle les paramètres de l'environnement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hEvkwEI8EeyRir5P9YDNug" name="Sonde pH-métrique">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_okDO8EI8EeyRir5P9YDNug" name="pH">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ta1XsEI8EeyRir5P9YDNug" name="mesurer pH"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jHZZAEI8EeyRir5P9YDNug" name="Sonde conductimétrique">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_w2Sx8EI8EeyRir5P9YDNug" name="Conductivité" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4-F_gEI8EeyRir5P9YDNug" name="mesurer conduc"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_je56EEI8EeyRir5P9YDNug" name="capteur de niveau d'eau">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ChlH8EI9EeyRir5P9YDNug" name="niveau haut">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Fu4KYEI9EeyRir5P9YDNug" name="niveau Bas">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IjBF8EI9EeyRir5P9YDNug" name="Mesurer niveau eau"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lK4TsEI8EeyRir5P9YDNug" name="Thermomètre">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_b_qE0EI9EeyRir5P9YDNug" name="Temp">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_fMyIIEI9EeyRir5P9YDNug" name="Mesurer temp"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lcHNoEI8EeyRir5P9YDNug" name="capteur CO2" visibility="protected">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_jUtm0EI9EeyRir5P9YDNug" name="concentration CO2">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_iKU3UEI9EeyRir5P9YDNug" name="Mesurer CO2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lteqcEI8EeyRir5P9YDNug" name="Hygromètre">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_45n5wEI9EeyRir5P9YDNug" name="Humidité">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7S9IoEI9EeyRir5P9YDNug" name="Mesurer humidité" visibility="package"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mEFMkEI8EeyRir5P9YDNug" name="Photorésistance">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Cm53YEI-EeyRir5P9YDNug" name="Luminosité">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Ftpl4EI-EeyRir5P9YDNug" name="Mesurer luminosité"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MJxKMEI9EeyRir5P9YDNug" memberEnd="_MJxxQEI9EeyRir5P9YDNug _MJxxQ0I9EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MJxKMUI9EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MJxKMkI9EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_MJxxQ0I9EeyRir5P9YDNug" name="raspberryesclave1" type="_Iqp0cEI8EeyRir5P9YDNug" association="_MJxKMEI9EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MpJ04EI9EeyRir5P9YDNug" memberEnd="_MpKb8kI9EeyRir5P9YDNug _MpLDAkI9EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MpKb8EI9EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MpKb8UI9EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_MpLDAkI9EeyRir5P9YDNug" name="raspberryesclave1" type="_Iqp0cEI8EeyRir5P9YDNug" association="_MpJ04EI9EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NMWBgEI9EeyRir5P9YDNug" memberEnd="_NMWokkI9EeyRir5P9YDNug _NMXPokI9EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NMWokEI9EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NMWokUI9EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_NMXPokI9EeyRir5P9YDNug" name="raspberryesclave1" type="_Iqp0cEI8EeyRir5P9YDNug" association="_NMWBgEI9EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TzD20EI9EeyRir5P9YDNug" memberEnd="_TzD200I9EeyRir5P9YDNug _TzEd4kI9EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TzD20UI9EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TzD20kI9EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TzEd4kI9EeyRir5P9YDNug" name="raspeberrychef" type="_35PFsEI7EeyRir5P9YDNug" association="_TzD20EI9EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WyHB4EI9EeyRir5P9YDNug" memberEnd="_WyHo8kI9EeyRir5P9YDNug _WyHo9UI9EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WyHo8EI9EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WyHo8UI9EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WyHo9UI9EeyRir5P9YDNug" name="raspeberrychef" type="_35PFsEI7EeyRir5P9YDNug" association="_WyHB4EI9EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JacAsEI-EeyRir5P9YDNug" memberEnd="_JacAs0I-EeyRir5P9YDNug _JacAtkI-EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JacAsUI-EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JacAskI-EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JacAtkI-EeyRir5P9YDNug" name="raspberryesclave2" type="_M2UjoEI8EeyRir5P9YDNug" association="_JacAsEI-EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JzxGsEI-EeyRir5P9YDNug" memberEnd="_JzxtwkI-EeyRir5P9YDNug _JzxtxUI-EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JzxtwEI-EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JzxtwUI-EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JzxtxUI-EeyRir5P9YDNug" name="raspberryesclave2" type="_M2UjoEI8EeyRir5P9YDNug" association="_JzxGsEI-EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KMcscEI-EeyRir5P9YDNug" memberEnd="_KMdTgkI-EeyRir5P9YDNug _KMd6kkI-EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KMdTgEI-EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KMdTgUI-EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KMd6kkI-EeyRir5P9YDNug" name="raspberryesclave2" type="_M2UjoEI8EeyRir5P9YDNug" association="_KMcscEI-EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Kt8P8EI-EeyRir5P9YDNug" memberEnd="_Kt83AkI-EeyRir5P9YDNug _Kt9eEkI-EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Kt83AEI-EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Kt83AUI-EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Kt9eEkI-EeyRir5P9YDNug" name="raspberryesclave2" type="_M2UjoEI8EeyRir5P9YDNug" association="_Kt8P8EI-EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VYnC4EI-EeyRir5P9YDNug" name="Block niveau nutriments">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_eo5igEI-EeyRir5P9YDNug" name="niveauHaut">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_h4CYAEI-EeyRir5P9YDNug" name="niveauBas">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_c0jQAEI-EeyRir5P9YDNug" name="mesurer niveau nutriments"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Z9MoYEI-EeyRir5P9YDNug" memberEnd="_Z9NPcUI-EeyRir5P9YDNug _Z9NPdEI-EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z9MoYUI-EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Z9NPcEI-EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Z9NPdEI-EeyRir5P9YDNug" name="raspberryesclave1" type="_Iqp0cEI8EeyRir5P9YDNug" association="_Z9MoYEI-EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nUTzcEI-EeyRir5P9YDNug" memberEnd="_nUUagkI-EeyRir5P9YDNug _nUVBkUI-EeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nUUagEI-EeyRir5P9YDNug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nUUagUI-EeyRir5P9YDNug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_nUVBkUI-EeyRir5P9YDNug" name="archi'pot" type="_cfs-MEI6EeyRir5P9YDNug" association="_nUTzcEI-EeyRir5P9YDNug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_q-QVoEI-EeyRir5P9YDNug" client="_pDs00EI7EeyRir5P9YDNug" supplier="_35PFsEI7EeyRir5P9YDNug"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RuVdcEImEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RuZu4EImEeyRir5P9YDNug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rx2rgEImEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rx2rgUImEeyRir5P9YDNug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rx9ZMEImEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rx9ZMUImEeyRir5P9YDNug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rx-AQEImEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rx-AQUImEeyRir5P9YDNug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rx-nUEImEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rx-nUUImEeyRir5P9YDNug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rx_OYEImEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rx_OYUImEeyRir5P9YDNug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rx_OYkImEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rx_1cEImEeyRir5P9YDNug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rx_1cUImEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RyAcgEImEeyRir5P9YDNug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RyAcgUImEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RyBDkEImEeyRir5P9YDNug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RyBDkUImEeyRir5P9YDNug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RyBqoEImEeyRir5P9YDNug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Blocks:Block xmi:id="_cf2vMEI6EeyRir5P9YDNug" base_Class="_cfs-MEI6EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_qqWfAEI6EeyRir5P9YDNug" base_Class="_qqQ_cEI6EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_bOWOkEI7EeyRir5P9YDNug" base_Class="_bOSkMEI7EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_i1CTIEI7EeyRir5P9YDNug" base_Class="_i0-owEI7EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_pDv4IEI7EeyRir5P9YDNug" base_Class="_pDs00EI7EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_35SJAEI7EeyRir5P9YDNug" base_Class="_35PFsEI7EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_IqsQsEI8EeyRir5P9YDNug" base_Class="_Iqp0cEI8EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_M2W_4EI8EeyRir5P9YDNug" base_Class="_M2UjoEI8EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_hEyBAEI8EeyRir5P9YDNug" base_Class="_hEvkwEI8EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_jHb1QEI8EeyRir5P9YDNug" base_Class="_jHZZAEI8EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_je8WUEI8EeyRir5P9YDNug" base_Class="_je56EEI8EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_lK6v8EI8EeyRir5P9YDNug" base_Class="_lK4TsEI8EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_lcKQ8EI8EeyRir5P9YDNug" base_Class="_lcHNoEI8EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_lthGsEI8EeyRir5P9YDNug" base_Class="_lteqcEI8EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_mEHo0EI8EeyRir5P9YDNug" base_Class="_mEFMkEI8EeyRir5P9YDNug"/>
+  <Blocks:Block xmi:id="_VYpfIEI-EeyRir5P9YDNug" base_Class="_VYnC4EI-EeyRir5P9YDNug"/>
+</xmi:XMI>

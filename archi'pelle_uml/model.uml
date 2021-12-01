@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_w7fnoFJ6Eey25oQTmBPvDQ" name="NewModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="_c3hz8FKDEey25oQTmBPvDQ" name="Archi_pelle">
+    <packageImport xmi:id="_Q4otIFKQEey25oQTmBPvDQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_L8M04FJ7Eey25oQTmBPvDQ" name="Archi_pelle_API">
+      <packagedElement xmi:type="uml:Package" xmi:id="_kj4boFKDEey25oQTmBPvDQ" name="sensors">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ozi6AFKDEey25oQTmBPvDQ" name="AbstractSensor" visibility="public" isAbstract="true">
+          <ownedAttribute xmi:id="_McxJUFKREey25oQTmBPvDQ" name="mesuredValue" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_McxJUVKREey25oQTmBPvDQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_McxJUlKREey25oQTmBPvDQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_2xLxMFKREey25oQTmBPvDQ" name="minValue" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2xLxMVKREey25oQTmBPvDQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2xLxMlKREey25oQTmBPvDQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_5fUycFKREey25oQTmBPvDQ" name="maxValue" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5fUycVKREey25oQTmBPvDQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5fUyclKREey25oQTmBPvDQ" value="1"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_KbhWMFKEEey25oQTmBPvDQ" client="_ozi6AFKDEey25oQTmBPvDQ" supplier="_HIKvEFKEEey25oQTmBPvDQ" contract="_HIKvEFKEEey25oQTmBPvDQ"/>
+          <ownedOperation xmi:id="_JTFRAFKQEey25oQTmBPvDQ" name="Alert"/>
+          <ownedOperation xmi:id="_ufVPwFKREey25oQTmBPvDQ" name="getValue"/>
+          <ownedOperation xmi:id="_A7V4EFKSEey25oQTmBPvDQ" name="setMinValue"/>
+          <ownedOperation xmi:id="_CYGxAFKSEey25oQTmBPvDQ" name="setMaxValue"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_HIKvEFKEEey25oQTmBPvDQ" name="IAlert" visibility="public">
+          <ownedOperation xmi:id="_G-jCkFKQEey25oQTmBPvDQ" name="Alert"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_L7FrgFKEEey25oQTmBPvDQ" name="PhMeter" visibility="public">
+          <generalization xmi:id="_eYc-sFKEEey25oQTmBPvDQ" general="_ozi6AFKDEey25oQTmBPvDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_N4d-MFKEEey25oQTmBPvDQ" name="Conductimeter" visibility="public">
+          <generalization xmi:id="_ewENcFKEEey25oQTmBPvDQ" general="_ozi6AFKDEey25oQTmBPvDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_PbnL8FKEEey25oQTmBPvDQ" name="PhotoResistor" visibility="public">
+          <generalization xmi:id="_fOyJwFKEEey25oQTmBPvDQ" general="_ozi6AFKDEey25oQTmBPvDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Vf0KEFKEEey25oQTmBPvDQ" name="HeatSensor" visibility="public">
+          <generalization xmi:id="_fmzBIFKEEey25oQTmBPvDQ" general="_ozi6AFKDEey25oQTmBPvDQ"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_TmkwgFKEEey25oQTmBPvDQ" name="actuators">
+        <packagedElement xmi:type="uml:Class" xmi:id="_kvv38FKEEey25oQTmBPvDQ" name="AbstractActuator" visibility="public" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_tdUsEFKEEey25oQTmBPvDQ" name="Pump" visibility="public">
+          <generalization xmi:id="_UgS_EFKKEey25oQTmBPvDQ" general="_kvv38FKEEey25oQTmBPvDQ"/>
+          <ownedAttribute xmi:id="_VnhzQFKSEey25oQTmBPvDQ" name="currentState" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VnhzQVKSEey25oQTmBPvDQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VnhzQlKSEey25oQTmBPvDQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_mmWE0FKSEey25oQTmBPvDQ" name="activationTime" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mmWE0VKSEey25oQTmBPvDQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mmWE0lKSEey25oQTmBPvDQ" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_Tdb6QFKSEey25oQTmBPvDQ" name="switchOn"/>
+          <ownedOperation xmi:id="_UsP2wFKSEey25oQTmBPvDQ" name="switchOff"/>
+          <ownedOperation xmi:id="_t8WCAFKSEey25oQTmBPvDQ" name="getCurrentState"/>
+          <ownedOperation xmi:id="_v41j4FKSEey25oQTmBPvDQ" name="setState"/>
+          <ownedOperation xmi:id="_zQxJAFKSEey25oQTmBPvDQ" name="getActTime"/>
+          <ownedOperation xmi:id="_3TeJcFKSEey25oQTmBPvDQ" name="setActTime"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_xUXPEFKEEey25oQTmBPvDQ" name="IState" visibility="public">
+          <ownedOperation xmi:id="_L9qWAFKSEey25oQTmBPvDQ" name="switchOn"/>
+          <ownedOperation xmi:id="_QMOBIFKSEey25oQTmBPvDQ" name="switchOff"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_2kZlUFKEEey25oQTmBPvDQ" name="On" visibility="public">
+          <interfaceRealization xmi:id="_6VRO4FKEEey25oQTmBPvDQ" client="_2kZlUFKEEey25oQTmBPvDQ" supplier="_xUXPEFKEEey25oQTmBPvDQ" contract="_xUXPEFKEEey25oQTmBPvDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_36M6oFKEEey25oQTmBPvDQ" name="Off" visibility="public">
+          <interfaceRealization xmi:id="_689hAFKEEey25oQTmBPvDQ" client="_36M6oFKEEey25oQTmBPvDQ" supplier="_xUXPEFKEEey25oQTmBPvDQ" contract="_xUXPEFKEEey25oQTmBPvDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="__6P6YFKEEey25oQTmBPvDQ" name=" " memberEnd="__6ZrYFKEEey25oQTmBPvDQ __6ZrY1KEEey25oQTmBPvDQ" navigableOwnedEnd="__6ZrY1KEEey25oQTmBPvDQ">
+          <ownedEnd xmi:id="__6ZrYFKEEey25oQTmBPvDQ" name="" type="_tdUsEFKEEey25oQTmBPvDQ" association="__6P6YFKEEey25oQTmBPvDQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__6ZrYVKEEey25oQTmBPvDQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__6ZrYlKEEey25oQTmBPvDQ" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:id="__6ZrY1KEEey25oQTmBPvDQ" name="iStates" type="_xUXPEFKEEey25oQTmBPvDQ" aggregation="shared" association="__6P6YFKEEey25oQTmBPvDQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__6ZrZFKEEey25oQTmBPvDQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__6ZrZVKEEey25oQTmBPvDQ" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_1Pk4sFKKEey25oQTmBPvDQ" name="plant">
+        <packagedElement xmi:type="uml:Class" xmi:id="_2OgmIFKKEey25oQTmBPvDQ" name="Plant" visibility="public"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_5_KNQFKKEey25oQTmBPvDQ" name="IStatePlant" visibility="public">
+          <ownedOperation xmi:id="_64cFAFKSEey25oQTmBPvDQ" name="switchGood"/>
+          <ownedOperation xmi:id="_8AFpkFKSEey25oQTmBPvDQ" name="switchNotGood"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_uXgtUFKNEey25oQTmBPvDQ" name="Good" visibility="public">
+          <interfaceRealization xmi:id="_75VTkFKNEey25oQTmBPvDQ" client="_uXgtUFKNEey25oQTmBPvDQ" supplier="_5_KNQFKKEey25oQTmBPvDQ" contract="_5_KNQFKKEey25oQTmBPvDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_xsKU8FKNEey25oQTmBPvDQ" name="NotGood" visibility="public">
+          <interfaceRealization xmi:id="_8WB2oFKNEey25oQTmBPvDQ" client="_xsKU8FKNEey25oQTmBPvDQ" supplier="_5_KNQFKKEey25oQTmBPvDQ" contract="_5_KNQFKKEey25oQTmBPvDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_80NncFKNEey25oQTmBPvDQ" name=" " memberEnd="_80NncVKNEey25oQTmBPvDQ _80NndFKNEey25oQTmBPvDQ" navigableOwnedEnd="_80NndFKNEey25oQTmBPvDQ">
+          <ownedEnd xmi:id="_80NncVKNEey25oQTmBPvDQ" name="" type="_2OgmIFKKEey25oQTmBPvDQ" association="_80NncFKNEey25oQTmBPvDQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_80NnclKNEey25oQTmBPvDQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_80Nnc1KNEey25oQTmBPvDQ" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:id="_80NndFKNEey25oQTmBPvDQ" name="" type="_5_KNQFKKEey25oQTmBPvDQ" aggregation="shared" association="_80NncFKNEey25oQTmBPvDQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_80NndVKNEey25oQTmBPvDQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_80NndlKNEey25oQTmBPvDQ" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xAblcFKPEey25oQTmBPvDQ" name="System" visibility="public"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_yoNbkFKPEey25oQTmBPvDQ" memberEnd="_yoNbkVKPEey25oQTmBPvDQ _yoNblFKPEey25oQTmBPvDQ" navigableOwnedEnd="_yoNblFKPEey25oQTmBPvDQ">
+        <ownedEnd xmi:id="_yoNbkVKPEey25oQTmBPvDQ" name="systems" type="_xAblcFKPEey25oQTmBPvDQ" association="_yoNbkFKPEey25oQTmBPvDQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yoNbklKPEey25oQTmBPvDQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yoNbk1KPEey25oQTmBPvDQ" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_yoNblFKPEey25oQTmBPvDQ" name="plants" type="_2OgmIFKKEey25oQTmBPvDQ" aggregation="composite" association="_yoNbkFKPEey25oQTmBPvDQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yoNblVKPEey25oQTmBPvDQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yoNbllKPEey25oQTmBPvDQ" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__3rtkFKPEey25oQTmBPvDQ" memberEnd="__3rtkVKPEey25oQTmBPvDQ __3rtlFKPEey25oQTmBPvDQ" navigableOwnedEnd="__3rtlFKPEey25oQTmBPvDQ">
+        <ownedEnd xmi:id="__3rtkVKPEey25oQTmBPvDQ" name="systems" type="_xAblcFKPEey25oQTmBPvDQ" association="__3rtkFKPEey25oQTmBPvDQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__3rtklKPEey25oQTmBPvDQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__3rtk1KPEey25oQTmBPvDQ" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="__3rtlFKPEey25oQTmBPvDQ" name="abstractSensors" type="_ozi6AFKDEey25oQTmBPvDQ" aggregation="composite" association="__3rtkFKPEey25oQTmBPvDQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__3rtlVKPEey25oQTmBPvDQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__3rtllKPEey25oQTmBPvDQ" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_CQdi0FKQEey25oQTmBPvDQ" memberEnd="_CQdi0VKQEey25oQTmBPvDQ _CQdi1FKQEey25oQTmBPvDQ" navigableOwnedEnd="_CQdi1FKQEey25oQTmBPvDQ">
+        <ownedEnd xmi:id="_CQdi0VKQEey25oQTmBPvDQ" name="systems" type="_xAblcFKPEey25oQTmBPvDQ" association="_CQdi0FKQEey25oQTmBPvDQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CQdi0lKQEey25oQTmBPvDQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CQdi01KQEey25oQTmBPvDQ" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_CQdi1FKQEey25oQTmBPvDQ" name="abstractActuators" type="_kvv38FKEEey25oQTmBPvDQ" aggregation="composite" association="_CQdi0FKQEey25oQTmBPvDQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CQdi1VKQEey25oQTmBPvDQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CQdi1lKQEey25oQTmBPvDQ" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
