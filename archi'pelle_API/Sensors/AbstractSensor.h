@@ -1,28 +1,36 @@
-#ifndef ABSTRACT_SENSOR_H_
-#define ABSTRACT_SENSOR_H_
+//
+// Created by Quentin on 06/12/2021.
+//
 
-class AbstractSensor
-{
-    
+#ifndef WKS_BE_ABSTRACTSENSOR_H
+#define WKS_BE_ABSTRACTSENSOR_H
+#include <cstdio>
 
-protected:
-    float minValue;
-    float maxValue;
-    float mesuredValue;
+using namespace std;
 
-public:
-    AbstractSensor(); //constructeur de base de la classe
-    ~AbstractSensor(); // destructeur de la classe
-    AbstractSensor(float minValue, float maxValue); //constructeur surchargé 
-    AbstractSensor(float minValue); //constructeur surchargé
-    AbstractSensor(float maxValue); //constructeur surchargé
-    float getValue() const;
-    float setMin(float newVal);
-    float setMax(float newVal);
+class AbstractSensor {
+
+public :
+
+    AbstractSensor(float minValue, float maxValue, float mesuredValue);
+
+    AbstractSensor();
+
+    virtual void Alert()=0;
+    virtual float getValue() const = 0;
+    virtual void setMin(float newVal) = 0;
+    virtual void setMax(float newVal) = 0;
+
+
+protected :
+    float minValue{};
+    float maxValue{};
+
+
+private:
+    float mesuredValue{};
 
 };
 
 
-
-
-#endif
+#endif //WKS_BE_ABSTRACTSENSOR_H

@@ -1,29 +1,22 @@
-#ifndef SYSTEM_H_
-#define SYSTEM_H_
+//
+// Created by Quentin on 06/12/2021.
+//
 
-#include "./plant/Plant.h"
-#include "./Sensors/Conductimeter.h"
-#include "./Sensors/HeatSensor.h"
-#include "./Sensors/PhMeter.h"
-#include "./Sensors/Photoresistor.h"
-#include "./Actuators/Pump.h"
+#ifndef WKS_BE_SYSTEM_H
+#define WKS_BE_SYSTEM_H
+#include "phMeter.h"
+#include "conductiMeter.h"
 
-
-class System
-{
-private:
-    Phmeter m_phmeter;
-    Plant m_plant;
-    Conductimeter m_conductimeter;
-    HeatSensor m_heatSensor;
-    Photoresistor m_photoresistor;
-    Pump m_pump;
-
+class System {
+private :
+    phMeter phMeter;
+    conductiMeter conductiMeter;
 public:
-    System();
-    ~System();
+    System(const class phMeter &phMeter, const class conductiMeter &conductiMeter);
+    float getPh();
+    float getCond();
+    virtual ~System();
 };
 
 
-
-#endif
+#endif //WKS_BE_SYSTEM_H

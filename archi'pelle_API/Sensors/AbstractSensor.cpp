@@ -1,81 +1,30 @@
+//
+// Created by Quentin on 06/12/2021.
+//
+
 #include <iostream>
-#include <string>
 #include "AbstractSensor.h"
 
 using namespace std;
 
-class AbstractSensor
-{
-    
-
-protected:
-    float minValue;
-    float maxValue;
-    float mesuredValue;
-
-public:
-    AbstractSensor();
-    AbstractSensor(float minValue, float maxValue);
-    AbstractSensor(float minValue);
-    AbstractSensor(float maxValue);
-    virtual ~AbstractSensor() = 0;
-    void Alert();
-    float getValue() const;
-    void setMin(float newVal);
-    void setMax(float newVal);
-
-};
-
-AbstractSensor::AbstractSensor()
-{
-    minValue = 0.0;
-    maxValue = 0.0;
-    mesuredValue = 0.0;
+void AbstractSensor::Alert() {
+    cout << "ALERTE !" ;
 }
 
-AbstractSensor::AbstractSensor(float minValue, float maxValue)
-{
-    this->maxValue = maxValue;
-    this->minValue = minValue;
-    mesuredValue = 50.0;
+float AbstractSensor::getValue() const {
+    return this->mesuredValue;
 }
 
-AbstractSensor::AbstractSensor(float minValue)
-{
-    this->minValue = minValue;
-    maxValue = 0.0;
-    mesuredValue = 50.0;
+void AbstractSensor::setMax(float newVal) {
 }
 
-AbstractSensor::AbstractSensor(float maxValue)
-{
-    this->maxValue = maxValue;
-    minValue = 0.0;
-    mesuredValue = 50.0;
+void AbstractSensor::setMin(float newVal) {
 }
 
-AbstractSensor::~AbstractSensor()
-{
-}
+AbstractSensor::AbstractSensor(float minValue, float maxValue, float mesuredValue) : minValue(minValue),
+                                                                                     maxValue(maxValue),
+                                                                                     mesuredValue(mesuredValue) {}
 
-void AbstractSensor::Alert()
-{
-
-}
-
-float AbstractSensor::getValue() const
-{
-    return mesuredValue;
-}
-
-void AbstractSensor::setMin(float newVal)
-{
-    this->minValue = newVal;
-}
-
-void AbstractSensor::setMax(float newVal)
-{
-    this->maxValue = newVal;
-}
+AbstractSensor::AbstractSensor() = default;
 
 
