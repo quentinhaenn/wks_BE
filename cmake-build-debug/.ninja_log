@@ -1,0 +1,11 @@
+# ninja log v5
+1	442	6603473296453290	CMakeFiles/wks_BE.dir/archi'pelle_API/Actuators/PumpStates/IState.cpp.obj	115796b3f16427e0
+2	384	6605074526061417	build.ninja	11e8ad62f7a0318
+46	742	6605073585926774	CMakeFiles/wks_BE.dir/archi'pelle_API/Sensors/conductiMeter.cpp.obj	43845956b3cfc0c5
+33	743	6605073585926774	CMakeFiles/wks_BE.dir/archi'pelle_API/Sensors/AbstractSensor.cpp.obj	997790c1505dd95e
+34	192	6605077509333488	CMakeFiles/wks_BE.dir/archi'pelle_API/System.cpp.obj	c49a949772d06726
+0	496	6605077512372992	CMakeFiles/wks_BE.dir/archi'pelle_API/main.cpp.obj	649ada91d57518ad
+27	522	6605077512642802	CMakeFiles/wks_BE.dir/archi'pelle_API/Sensors/phMeter.cpp.obj	a8a70522a58ee1ef
+0	178	6605078338957023	CMakeFiles/wks_BE.dir/archi'pelle_API/System.cpp.obj	c49a949772d06726
+1	171	6605078689702321	CMakeFiles/wks_BE.dir/archi'pelle_API/System.cpp.obj	c49a949772d06726
+172	378	6605078691732178	wks_BE.exe	52a44cc6bef58088
