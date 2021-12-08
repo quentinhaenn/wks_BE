@@ -23,7 +23,17 @@ int main(){
 
     PlantFramboise.setPhValues(0,50);
 
-    cout << "les limites de la framboise sont " + PlantFramboise.getPhValues();
+    cout << "les limites de la framboise sont " + PlantFramboise.getPhValues() << "\n";
+
+    Pump pump;
+    pump.setActiveTime(5);
+    pump.setState(new OnState);
+    pump.setName("Pompe à nutriments");
+    system.addActuator(&pump);
+    system.toString();
+    //system.delActuator();
+    //system.toString();
+
 
     return 0;
 }

@@ -23,7 +23,8 @@ void Plant::setPhValues(float min, float max) {
 }
 
 std::string Plant::getPhValues() const {
-    return "Ph edges : \n Min :" + std::to_string(this->lowerpH) + "\n Max : " + std::to_string(this->higherPh);
+    return ("Ph edges : \n Min :" + std::to_string(this->lowerpH) + "\n Max : "
+            + std::to_string(this->higherPh));
 }
 
 std::string Plant::getPlantName() const {
